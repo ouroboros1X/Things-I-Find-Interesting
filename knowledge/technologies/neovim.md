@@ -1,127 +1,119 @@
-# Vim
 
-> A modal text editor built around the idea that editing text can be done efficiently without constantly reaching for the mouse.
+# Neovim
+
+> A modern, extensible implementation of Vim designed to make Vim-style editing easier to extend and integrate with modern development workflows.
 
 ## 🔗 Resources
 
-* [Vim Documentation](https://www.vim.org/docs.php)
-* [Vim Help](https://vimhelp.org/)
+* [Neovim](https://neovim.io/)
+* [Neovim Documentation](https://neovim.io/doc/)
+* [Neovim GitHub](https://github.com/neovim/neovim)
 
-## 🧠 What is Vim?
+## 🧠 What is Neovim?
 
-Vim is a terminal-based text editor and an improved version of the original **Vi** editor.
+Neovim is a refactor of Vim focused on improving:
 
-The main idea behind Vim is **modal editing**.
+* Extensibility
+* Plugin development
+* Developer tooling
+* Embedding
+* Modern editor workflows
 
-Instead of using the keyboard only to type text, different modes give the keyboard different purposes.
+It keeps the core idea of Vim — **modal editing** — while providing a more modern architecture for extensions and integrations.
 
-## ⌨️ Modes
+## ⚡ Why Neovim?
 
-### Normal Mode
+One of the things that interests me about Neovim is that it can be transformed from a simple terminal editor into a complete development environment.
 
-Used for navigating and manipulating text.
+It can be extended with plugins for:
 
-```text
-Esc
-```
+* LSP
+* Autocompletion
+* Git
+* File navigation
+* Debugging
+* Formatting
+* Syntax highlighting
+* AI tools
+* Project management
 
-Examples:
+## 🧩 Configuration
 
-```text
-h → left
-j → down
-k → up
-l → right
+Neovim configuration is commonly written using **Lua**.
 
-w → next word
-b → previous word
-0 → beginning of line
-$ → end of line
-```
-
-### Insert Mode
-
-Used for typing text.
-
-```text
-i → insert before cursor
-a → insert after cursor
-o → new line below
-O → new line above
-```
-
-### Visual Mode
-
-Used to select text.
+Typical configuration location:
 
 ```text
-v → character selection
-V → line selection
-Ctrl + v → block selection
+~/.config/nvim/
 ```
 
-### Command Mode
-
-Used for commands such as saving and quitting.
+A simple structure can look like:
 
 ```text
-:w  → save
-:q  → quit
-:wq → save and quit
-:q! → quit without saving
+~/.config/nvim/
+├── init.lua
+└── lua/
+    └── plugins/
 ```
 
-## 🔥 Important Commands
+## 🛠️ Things I'm Learning
+
+* Neovim configuration
+* Lua
+* Plugins
+* LSP
+* Treesitter
+* Git integration
+* Terminal workflows
+* Key mappings
+* Autocompletion
+* Debugging
+* Custom development environment
+
+## 🔌 Plugins
+
+Plugins can extend Neovim's functionality.
+
+Some areas I want to explore:
 
 ```text
-dd      delete line
-yy      copy line
-p       paste
-u       undo
-Ctrl+r  redo
+LSP
+├── Language servers
+├── Diagnostics
+└── Code actions
 
-dw      delete word
-cw      change word
+Completion
+├── Suggestions
+└── Snippets
 
-/search → search
-n       → next result
-N       → previous result
+Git
+├── Diff
+├── Signs
+└── History
+
+Navigation
+├── File explorer
+└── Fuzzy finder
 ```
-
-## 💡 What I'm Learning
-
-* Modal editing
-* Keyboard-based navigation
-* Text manipulation
-* Motions and operators
-* Vim commands
-* Efficient editing without a mouse
 
 ## 🤔 Why I Find It Interesting
 
-Vim changes the way I think about editing.
+The interesting part isn't just that Neovim is a text editor.
 
-Instead of:
+It's that **the editor itself can become a programmable development environment**.
 
-> Move → select → click → delete → move → type
-
-I can describe an operation directly using commands.
-
-For example:
-
-```text
-ci"
-```
-
-means:
-
-> Change Inside Quotes
-
-This combination of commands is one of the things that makes Vim interesting to me.
+Instead of accepting the workflow provided by an IDE, I can gradually build an environment around the way I work.
 
 ## 📝 My Notes
 
-I'll add commands, tricks, workflows, and things I discover while actually using Vim here.
+I'll document:
+
+* Useful commands
+* Configuration changes
+* Plugins I experiment with
+* Problems I encounter
+* Things I learn about Lua
+* My evolving Neovim setup
 
 ---
 
