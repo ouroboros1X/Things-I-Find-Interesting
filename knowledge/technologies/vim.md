@@ -125,4 +125,4 @@ I'll add commands, tricks, workflows, and things I discover while actually using
 
 ---
 
-**Status:** 🟡 Learning
+**Status:** 🟡 DONE
